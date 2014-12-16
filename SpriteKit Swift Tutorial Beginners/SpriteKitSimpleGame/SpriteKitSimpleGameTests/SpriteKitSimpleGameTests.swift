@@ -2,8 +2,8 @@
 //  SpriteKitSimpleGameTests.swift
 //  SpriteKitSimpleGameTests
 //
-//  Created by Alan Liang on 12/11/14.
-//  Copyright (c) 2014 fsa. All rights reserved.
+//  Created by Main Account on 9/30/14.
+//  Copyright (c) 2014 Razeware LLC. All rights reserved.
 //
 
 import UIKit
