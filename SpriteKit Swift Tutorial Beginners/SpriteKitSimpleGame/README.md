@@ -1,3 +1,10 @@
+Tips
+================================
+Moving Monsters
+--------------------------------
+When he writes "Add the following methods to "GameScene.swift" he means to add to the GameScene class, not into the module.
+
+
 Bugs
 ================================
 
