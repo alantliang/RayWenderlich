@@ -17,6 +17,8 @@
 		3571650C19DB1F5500ED38A9 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3571650919DB1F5500ED38A9 /* background-music-aac.caf */; };
 		3571650D19DB1F5500ED38A9 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3571650A19DB1F5500ED38A9 /* pew-pew-lei.caf */; };
 		3571650E19DB1F5500ED38A9 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 3571650B19DB1F5500ED38A9 /* sprites.atlas */; };
+		E77435471A47CF9E000D8E02 /* Man Of Steel - An Ideal of Hope - Trailer Music - Hans Zimmer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E77435461A47CF9E000D8E02 /* Man Of Steel - An Ideal of Hope - Trailer Music - Hans Zimmer.mp3 */; };
+		E77435491A47D16F000D8E02 /* Pitch Baseball.wav in Resources */ = {isa = PBXBuildFile; fileRef = E77435481A47D16F000D8E02 /* Pitch Baseball.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		3571650919DB1F5500ED38A9 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
 		3571650A19DB1F5500ED38A9 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
 		3571650B19DB1F5500ED38A9 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		E77435461A47CF9E000D8E02 /* Man Of Steel - An Ideal of Hope - Trailer Music - Hans Zimmer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Man Of Steel - An Ideal of Hope - Trailer Music - Hans Zimmer.mp3"; sourceTree = "<group>"; };
+		E77435481A47D16F000D8E02 /* Pitch Baseball.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pitch Baseball.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 		3571650819DB1F5500ED38A9 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				E77435481A47D16F000D8E02 /* Pitch Baseball.wav */,
+				E77435461A47CF9E000D8E02 /* Man Of Steel - An Ideal of Hope - Trailer Music - Hans Zimmer.mp3 */,
 				3571650919DB1F5500ED38A9 /* background-music-aac.caf */,
 				3571650A19DB1F5500ED38A9 /* pew-pew-lei.caf */,
 			);
@@ -215,7 +221,9 @@
 				3571650E19DB1F5500ED38A9 /* sprites.atlas in Resources */,
 				3571650C19DB1F5500ED38A9 /* background-music-aac.caf in Resources */,
 				357164F319DB1E4800ED38A9 /* LaunchScreen.xib in Resources */,
+				E77435491A47D16F000D8E02 /* Pitch Baseball.wav in Resources */,
 				357164F019DB1E4800ED38A9 /* Images.xcassets in Resources */,
+				E77435471A47CF9E000D8E02 /* Man Of Steel - An Ideal of Hope - Trailer Music - Hans Zimmer.mp3 in Resources */,
 				357164EE19DB1E4800ED38A9 /* Main.storyboard in Resources */,
 				3571650D19DB1F5500ED38A9 /* pew-pew-lei.caf in Resources */,
 			);
