@@ -19,6 +19,7 @@
 		3571650E19DB1F5500ED38A9 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 3571650B19DB1F5500ED38A9 /* sprites.atlas */; };
 		E77435471A47CF9E000D8E02 /* Man Of Steel - An Ideal of Hope - Trailer Music - Hans Zimmer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E77435461A47CF9E000D8E02 /* Man Of Steel - An Ideal of Hope - Trailer Music - Hans Zimmer.mp3 */; };
 		E77435491A47D16F000D8E02 /* Pitch Baseball.wav in Resources */ = {isa = PBXBuildFile; fileRef = E77435481A47D16F000D8E02 /* Pitch Baseball.wav */; };
+		E774354B1A47D59F000D8E02 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E774354A1A47D59F000D8E02 /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		3571650B19DB1F5500ED38A9 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
 		E77435461A47CF9E000D8E02 /* Man Of Steel - An Ideal of Hope - Trailer Music - Hans Zimmer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Man Of Steel - An Ideal of Hope - Trailer Music - Hans Zimmer.mp3"; sourceTree = "<group>"; };
 		E77435481A47D16F000D8E02 /* Pitch Baseball.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pitch Baseball.wav"; sourceTree = "<group>"; };
+		E774354A1A47D59F000D8E02 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				3571650B19DB1F5500ED38A9 /* sprites.atlas */,
 				357164E419DB1E4800ED38A9 /* AppDelegate.swift */,
 				357164E819DB1E4800ED38A9 /* GameScene.swift */,
+				E774354A1A47D59F000D8E02 /* GameOverScene.swift */,
 				357164EA19DB1E4800ED38A9 /* GameViewController.swift */,
 				357164EC19DB1E4800ED38A9 /* Main.storyboard */,
 				357164EF19DB1E4800ED38A9 /* Images.xcassets */,
@@ -245,6 +248,7 @@
 			files = (
 				357164E919DB1E4800ED38A9 /* GameScene.swift in Sources */,
 				357164EB19DB1E4800ED38A9 /* GameViewController.swift in Sources */,
+				E774354B1A47D59F000D8E02 /* GameOverScene.swift in Sources */,
 				357164E519DB1E4800ED38A9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
