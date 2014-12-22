@@ -73,7 +73,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let player = SKSpriteNode(imageNamed: "player")
     
     override func didMoveToView(view: SKView) {
-        playBackgroundMusic("background-msic-aac.caf")  // this music is too annoying
+        playBackgroundMusic("background-music-aac.caf")  // this music is too annoying
         // playBackgroundMusic("Man Of Steel - An Ideal of Hope - Trailer Music - Hans Zimmer.mp3")
         backgroundColor = SKColor.whiteColor()
         player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
