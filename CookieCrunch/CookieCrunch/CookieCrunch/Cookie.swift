@@ -9,7 +9,7 @@
 import Foundation
 import SpriteKit
 
-enum CookieType: Int {
+enum CookieType: Int, Printable {
     case Unknown = 0, Croissant, Cupcake, Danish, Donut, Macaroon, SUgarCookie
     
     var spriteName: String {
@@ -29,9 +29,13 @@ enum CookieType: Int {
     static func random() -> CookieType {
         return CookieType(rawValue: Int(arc4random_uniform(6)) + 1)!  // what does this exclamation mean?
     }
+    
+    var description: String {
+        return spriteName
+    }
 }
 
-class Cookie {
+class Cookie: Printable {
     var column: Int
     var row: Int
     let cookieType: CookieType
@@ -41,5 +45,9 @@ class Cookie {
         self.column = column
         self.row = row
         self.cookieType = cookieType
+    }
+    
+    var description: String {
+        return "type:\(cookieType) square:(\(column),\(row))"
     }
 }
