@@ -15,6 +15,7 @@
 		E77435691A48FBCD000D8E02 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E77435671A48FBCD000D8E02 /* LaunchScreen.xib */; };
 		E77435751A48FBCD000D8E02 /* CookieCrunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77435741A48FBCD000D8E02 /* CookieCrunchTests.swift */; };
 		E774357F1A48FCC7000D8E02 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E774357E1A48FCC7000D8E02 /* Sprites.atlas */; };
+		E77435891A4901A0000D8E02 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77435881A4901A0000D8E02 /* Cookie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		E77435731A48FBCD000D8E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E77435741A48FBCD000D8E02 /* CookieCrunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieCrunchTests.swift; sourceTree = "<group>"; };
 		E774357E1A48FCC7000D8E02 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		E77435881A4901A0000D8E02 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				E774357E1A48FCC7000D8E02 /* Sprites.atlas */,
 				E774355A1A48FBCD000D8E02 /* AppDelegate.swift */,
 				E774355E1A48FBCD000D8E02 /* GameScene.swift */,
+				E77435881A4901A0000D8E02 /* Cookie.swift */,
 				E77435601A48FBCD000D8E02 /* GameViewController.swift */,
 				E77435621A48FBCD000D8E02 /* Main.storyboard */,
 				E77435651A48FBCD000D8E02 /* Images.xcassets */,
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E774355F1A48FBCD000D8E02 /* GameScene.swift in Sources */,
+				E77435891A4901A0000D8E02 /* Cookie.swift in Sources */,
 				E77435611A48FBCD000D8E02 /* GameViewController.swift in Sources */,
 				E774355B1A48FBCD000D8E02 /* AppDelegate.swift in Sources */,
 			);
