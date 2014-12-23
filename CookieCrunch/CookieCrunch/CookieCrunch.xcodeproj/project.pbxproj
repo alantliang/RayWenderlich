@@ -16,6 +16,8 @@
 		E77435751A48FBCD000D8E02 /* CookieCrunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77435741A48FBCD000D8E02 /* CookieCrunchTests.swift */; };
 		E774357F1A48FCC7000D8E02 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E774357E1A48FCC7000D8E02 /* Sprites.atlas */; };
 		E77435891A4901A0000D8E02 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77435881A4901A0000D8E02 /* Cookie.swift */; };
+		E774358B1A49088E000D8E02 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = E774358A1A49088E000D8E02 /* Array2D.swift */; };
+		E774358D1A490C16000D8E02 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = E774358C1A490C16000D8E02 /* Set.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		E77435741A48FBCD000D8E02 /* CookieCrunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieCrunchTests.swift; sourceTree = "<group>"; };
 		E774357E1A48FCC7000D8E02 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 		E77435881A4901A0000D8E02 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		E774358A1A49088E000D8E02 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		E774358C1A490C16000D8E02 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 				E774355A1A48FBCD000D8E02 /* AppDelegate.swift */,
 				E774355E1A48FBCD000D8E02 /* GameScene.swift */,
 				E77435881A4901A0000D8E02 /* Cookie.swift */,
+				E774358A1A49088E000D8E02 /* Array2D.swift */,
+				E774358C1A490C16000D8E02 /* Set.swift */,
 				E77435601A48FBCD000D8E02 /* GameViewController.swift */,
 				E77435621A48FBCD000D8E02 /* Main.storyboard */,
 				E77435651A48FBCD000D8E02 /* Images.xcassets */,
@@ -224,8 +230,10 @@
 			files = (
 				E774355F1A48FBCD000D8E02 /* GameScene.swift in Sources */,
 				E77435891A4901A0000D8E02 /* Cookie.swift in Sources */,
+				E774358D1A490C16000D8E02 /* Set.swift in Sources */,
 				E77435611A48FBCD000D8E02 /* GameViewController.swift in Sources */,
 				E774355B1A48FBCD000D8E02 /* AppDelegate.swift in Sources */,
+				E774358B1A49088E000D8E02 /* Array2D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
