@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E765C1111A4B871A0037DBC8 /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = E765C10C1A4B871A0037DBC8 /* Level_0.json */; };
+		E765C1121A4B871A0037DBC8 /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = E765C10D1A4B871A0037DBC8 /* Level_1.json */; };
+		E765C1131A4B871A0037DBC8 /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = E765C10E1A4B871A0037DBC8 /* Level_2.json */; };
+		E765C1141A4B871A0037DBC8 /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = E765C10F1A4B871A0037DBC8 /* Level_3.json */; };
+		E765C1151A4B871A0037DBC8 /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = E765C1101A4B871A0037DBC8 /* Level_4.json */; };
+		E765C1171A4B8A620037DBC8 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765C1161A4B8A620037DBC8 /* Tile.swift */; };
+		E765C1191A4B8C090037DBC8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765C1181A4B8C090037DBC8 /* Extensions.swift */; };
 		E774355B1A48FBCD000D8E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E774355A1A48FBCD000D8E02 /* AppDelegate.swift */; };
 		E774355F1A48FBCD000D8E02 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E774355E1A48FBCD000D8E02 /* GameScene.swift */; };
 		E77435611A48FBCD000D8E02 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77435601A48FBCD000D8E02 /* GameViewController.swift */; };
@@ -32,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E765C10C1A4B871A0037DBC8 /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		E765C10D1A4B871A0037DBC8 /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		E765C10E1A4B871A0037DBC8 /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		E765C10F1A4B871A0037DBC8 /* Level_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		E765C1101A4B871A0037DBC8 /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+		E765C1161A4B8A620037DBC8 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tile.swift; path = Levels/Tile.swift; sourceTree = "<group>"; };
+		E765C1181A4B8C090037DBC8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E77435551A48FBCD000D8E02 /* CookieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77435591A48FBCD000D8E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E774355A1A48FBCD000D8E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +82,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E765C10B1A4B871A0037DBC8 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				E765C10C1A4B871A0037DBC8 /* Level_0.json */,
+				E765C10D1A4B871A0037DBC8 /* Level_1.json */,
+				E765C10E1A4B871A0037DBC8 /* Level_2.json */,
+				E765C10F1A4B871A0037DBC8 /* Level_3.json */,
+				E765C1101A4B871A0037DBC8 /* Level_4.json */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
 		E774354C1A48FBCD000D8E02 = {
 			isa = PBXGroup;
 			children = (
@@ -89,13 +115,16 @@
 		E77435571A48FBCD000D8E02 /* CookieCrunch */ = {
 			isa = PBXGroup;
 			children = (
+				E765C10B1A4B871A0037DBC8 /* Levels */,
 				E774357E1A48FCC7000D8E02 /* Sprites.atlas */,
 				E774355A1A48FBCD000D8E02 /* AppDelegate.swift */,
 				E774355E1A48FBCD000D8E02 /* GameScene.swift */,
 				E77435881A4901A0000D8E02 /* Cookie.swift */,
 				E774358A1A49088E000D8E02 /* Array2D.swift */,
 				E774358C1A490C16000D8E02 /* Set.swift */,
+				E765C1161A4B8A620037DBC8 /* Tile.swift */,
 				E774358E1A491141000D8E02 /* Level.swift */,
+				E765C1181A4B8C090037DBC8 /* Extensions.swift */,
 				E77435601A48FBCD000D8E02 /* GameViewController.swift */,
 				E77435621A48FBCD000D8E02 /* Main.storyboard */,
 				E77435651A48FBCD000D8E02 /* Images.xcassets */,
@@ -211,8 +240,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E77435691A48FBCD000D8E02 /* LaunchScreen.xib in Resources */,
+				E765C1151A4B871A0037DBC8 /* Level_4.json in Resources */,
+				E765C1131A4B871A0037DBC8 /* Level_2.json in Resources */,
+				E765C1111A4B871A0037DBC8 /* Level_0.json in Resources */,
 				E77435661A48FBCD000D8E02 /* Images.xcassets in Resources */,
 				E77435641A48FBCD000D8E02 /* Main.storyboard in Resources */,
+				E765C1121A4B871A0037DBC8 /* Level_1.json in Resources */,
+				E765C1141A4B871A0037DBC8 /* Level_3.json in Resources */,
 				E774357F1A48FCC7000D8E02 /* Sprites.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,8 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E774355F1A48FBCD000D8E02 /* GameScene.swift in Sources */,
+				E765C1191A4B8C090037DBC8 /* Extensions.swift in Sources */,
 				E774358F1A491141000D8E02 /* Level.swift in Sources */,
 				E77435891A4901A0000D8E02 /* Cookie.swift in Sources */,
+				E765C1171A4B8A620037DBC8 /* Tile.swift in Sources */,
 				E774358D1A490C16000D8E02 /* Set.swift in Sources */,
 				E77435611A48FBCD000D8E02 /* GameViewController.swift in Sources */,
 				E774355B1A48FBCD000D8E02 /* AppDelegate.swift in Sources */,
@@ -429,6 +465,7 @@
 				E774357A1A48FBCD000D8E02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E774357B1A48FBCD000D8E02 /* Build configuration list for PBXNativeTarget "CookieCrunchTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +474,7 @@
 				E774357D1A48FBCD000D8E02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
