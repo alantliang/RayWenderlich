@@ -14,6 +14,7 @@
 		E765C1151A4B871A0037DBC8 /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = E765C1101A4B871A0037DBC8 /* Level_4.json */; };
 		E765C1171A4B8A620037DBC8 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765C1161A4B8A620037DBC8 /* Tile.swift */; };
 		E765C1191A4B8C090037DBC8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765C1181A4B8C090037DBC8 /* Extensions.swift */; };
+		E765C11B1A5E33380037DBC8 /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765C11A1A5E33380037DBC8 /* Swap.swift */; };
 		E774355B1A48FBCD000D8E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E774355A1A48FBCD000D8E02 /* AppDelegate.swift */; };
 		E774355F1A48FBCD000D8E02 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E774355E1A48FBCD000D8E02 /* GameScene.swift */; };
 		E77435611A48FBCD000D8E02 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77435601A48FBCD000D8E02 /* GameViewController.swift */; };
@@ -46,6 +47,7 @@
 		E765C1101A4B871A0037DBC8 /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
 		E765C1161A4B8A620037DBC8 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tile.swift; path = Levels/Tile.swift; sourceTree = "<group>"; };
 		E765C1181A4B8C090037DBC8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E765C11A1A5E33380037DBC8 /* Swap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
 		E77435551A48FBCD000D8E02 /* CookieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77435591A48FBCD000D8E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E774355A1A48FBCD000D8E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				E774357E1A48FCC7000D8E02 /* Sprites.atlas */,
 				E774355A1A48FBCD000D8E02 /* AppDelegate.swift */,
 				E774355E1A48FBCD000D8E02 /* GameScene.swift */,
+				E765C11A1A5E33380037DBC8 /* Swap.swift */,
 				E77435881A4901A0000D8E02 /* Cookie.swift */,
 				E774358A1A49088E000D8E02 /* Array2D.swift */,
 				E774358C1A490C16000D8E02 /* Set.swift */,
@@ -269,6 +272,7 @@
 				E765C1191A4B8C090037DBC8 /* Extensions.swift in Sources */,
 				E774358F1A491141000D8E02 /* Level.swift in Sources */,
 				E77435891A4901A0000D8E02 /* Cookie.swift in Sources */,
+				E765C11B1A5E33380037DBC8 /* Swap.swift in Sources */,
 				E765C1171A4B8A620037DBC8 /* Tile.swift in Sources */,
 				E774358D1A490C16000D8E02 /* Set.swift in Sources */,
 				E77435611A48FBCD000D8E02 /* GameViewController.swift in Sources */,
