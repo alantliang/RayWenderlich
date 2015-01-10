@@ -52,6 +52,10 @@ class Level {
         return set
     }
     
+    func isPossibleSwap(swap: Swap) -> Bool {
+        return possibleSwaps.containsElement(swap)
+    }
+
     func detectPossibleSwaps() {
         var set = Set<Swap>()
         
