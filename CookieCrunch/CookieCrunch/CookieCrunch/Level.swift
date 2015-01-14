@@ -47,7 +47,7 @@ class Level {
             detectPossibleSwaps()
             println("possible swaps: \(possibleSwaps)")
         }
-        while possibleSwaps.count == 0
+            while possibleSwaps.count == 0
         
         return set
     }
@@ -55,7 +55,7 @@ class Level {
     func isPossibleSwap(swap: Swap) -> Bool {
         return possibleSwaps.containsElement(swap)
     }
-
+    
     func detectPossibleSwaps() {
         var set = Set<Swap>()
         
@@ -66,7 +66,7 @@ class Level {
                     if column < NumColumns - 1 {
                         // Have a cookie in this spot? If there is no tile, there is no cookie
                         if let other = cookies[column + 1, row] {
-                        // Swap them
+                            // Swap them
                             cookies[column, row] = other
                             cookies[column + 1, row] = cookie
                             
@@ -75,11 +75,11 @@ class Level {
                                 hasChainAtColumn(column, row: row) {
                                     set.addElement(Swap(cookieA: cookie, cookieB: other))
                             }
-                        
+                            
                             // Swap them back
                             cookies[column, row] = cookie
                             cookies[column + 1, row] = other
-                        
+                            
                         }
                     }
                     if row < NumRows - 1 {
@@ -137,6 +137,69 @@ class Level {
         swap.cookieA.row = rowB
     }
     
+    func removeMatches() -> Set<Chain> {
+        let horizontalChains = detectHorizontalMatches()
+        let verticalChains = detectVerticalMatches()
+        
+        println("Horizontal matches: \(horizontalChains)")
+        println("Vertical matches: \(verticalChains)")
+        
+        return horizontalChains.unionSet(verticalChains)
+    }
+    
+    private func detectHorizontalMatches() -> Set<Chain> {
+        var set = Set<Chain>()
+        for row in 0..<NumRows {
+            for var column = 0; column < NumColumns - 2 ; {
+                if let cookie = cookies[column, row] {
+                    let matchType = cookie.cookieType
+                    
+                    if cookies[column + 1, row]?.cookieType == matchType &&
+                        cookies[column + 2, row]?.cookieType == matchType {
+                            let chain = Chain(chainType: .Horizontal)
+                            do {
+                                chain.addCookie(cookies[column, row]!)
+                                ++column
+                            }
+                                while column < NumColumns && cookies[column, row]?.cookieType == matchType
+                            
+                            set.addElement(chain)
+                            continue
+                    }
+                }
+                ++column
+            }
+        }
+        return set
+    }
+    
+    private func detectVerticalMatches() -> Set<Chain> {
+        var set = Set<Chain>()
+        
+        for column in 0..<NumColumns {
+            for var row = 0; row < NumRows - 2; {
+                if let cookie = cookies[column, row] {
+                    let matchType = cookie.cookieType
+                    
+                    if cookies[column, row + 1]?.cookieType == matchType &&
+                        cookies[column, row + 2]?.cookieType == matchType {
+                            let chain = Chain(chainType: .Vertical)
+                            do {
+                                chain.addCookie(cookies[column, row]!)
+                                ++row
+                            }
+                                while row < NumRows && cookies[column, row]?.cookieType == matchType
+                            
+                            set.addElement(chain)
+                            continue
+                    }
+                }
+                ++row
+            }
+        }
+        return set
+    }
+    
     private func createInitialCookies() -> Set<Cookie> {
         var set = Set<Cookie>()
         
@@ -150,12 +213,12 @@ class Level {
                     do {
                         cookieType = CookieType.random()
                     }
-                    while (column >= 2 &&
-                        cookies[column - 1, row]?.cookieType == cookieType &&
-                        cookies[column - 2, row]?.cookieType == cookieType)
-                    || (row >= 2 &&
-                        cookies[column, row - 1]?.cookieType == cookieType &&
-                        cookies[column, row - 2]?.cookieType == cookieType)
+                        while (column >= 2 &&
+                            cookies[column - 1, row]?.cookieType == cookieType &&
+                            cookies[column - 2, row]?.cookieType == cookieType)
+                            || (row >= 2 &&
+                                cookies[column, row - 1]?.cookieType == cookieType &&
+                                cookies[column, row - 2]?.cookieType == cookieType)
                     
                     // 3
                     let cookie = Cookie(column: column, row: row, cookieType: cookieType)
