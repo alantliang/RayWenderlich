@@ -104,6 +104,14 @@ class Level {
         possibleSwaps = set
     }
     
+    private func removeCookies(chains: Set<Chain>) {
+        for chain in chains {
+            for cookie in chain.cookies {
+                cookies[cookie.column, cookie.row] = nil
+            }
+        }
+    }
+    
     private func hasChainAtColumn(column: Int, row: Int) -> Bool {
         let cookieType = cookies[column, row]!.cookieType
         
@@ -141,8 +149,9 @@ class Level {
         let horizontalChains = detectHorizontalMatches()
         let verticalChains = detectVerticalMatches()
         
-        println("Horizontal matches: \(horizontalChains)")
-        println("Vertical matches: \(verticalChains)")
+        
+        removeCookies(horizontalChains)
+        removeCookies(verticalChains)
         
         return horizontalChains.unionSet(verticalChains)
     }
