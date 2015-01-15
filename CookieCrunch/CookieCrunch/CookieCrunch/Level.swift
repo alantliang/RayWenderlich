@@ -5,24 +5,25 @@ let NumRows = 9
 
 class Level {
     init(filename: String) {
-        // 1
         if let dictionary = Dictionary<String, AnyObject>.loadJSONFromBundle(filename) {
-            // 2
+
             if let tilesArray: AnyObject = dictionary["tiles"] {
-                // 3
                 for (row, rowArray) in enumerate(tilesArray as [[Int]]) {
-                    // 4
                     let tileRow = NumRows - row - 1
-                    // 5
                     for (column, value) in enumerate(rowArray) {
                         if value == 1 {
                             tiles[column, tileRow] = Tile()
                         }
                     }
                 }
+                targetScore = (dictionary["targetScore"] as NSNumber).integerValue
+                maximumMoves = (dictionary["moves"] as NSNumber).integerValue
             }
         }
     }
+
+    let targetScore: Int!
+    let maximumMoves: Int!
     
     private var cookies = Array2D<Cookie>(columns: NumColumns, rows: NumRows)
     private var tiles = Array2D<Tile>(columns: NumColumns, rows: NumRows)
@@ -173,6 +174,13 @@ class Level {
         }
     }
     
+    private func calculateScores(chains: Set<Chain>) {
+        // 3-chain is 60 pts, 4-chain is 120, 5-chain is 180, and so on
+        for chain in chains {
+            chain.score = 60 * (chain.length - 2)
+        }
+    }
+    
     private func hasChainAtColumn(column: Int, row: Int) -> Bool {
         let cookieType = cookies[column, row]!.cookieType
         
@@ -209,13 +217,15 @@ class Level {
     func removeMatches() -> Set<Chain> {
         let horizontalChains = detectHorizontalMatches()
         let verticalChains = detectVerticalMatches()
-        
-        
         removeCookies(horizontalChains)
         removeCookies(verticalChains)
-        
+        calculateScores(horizontalChains)
+        calculateScores(verticalChains)
         return horizontalChains.unionSet(verticalChains)
     }
+    
+    
+
     
     private func detectHorizontalMatches() -> Set<Chain> {
         var set = Set<Chain>()

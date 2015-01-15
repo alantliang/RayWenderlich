@@ -4,8 +4,17 @@ import SpriteKit
 class GameViewController: UIViewController {
     var scene: GameScene!
     var level: Level!
+    var movesLeft = 0
+    var score = 0
+    
+    @IBOutlet weak var targetLabel: UILabel!
+    @IBOutlet weak var movesLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     func beginGame() {
+        movesLeft = level.maximumMoves
+        score = 0
+        updateLabels()
         shuffle()
     }
     
@@ -27,6 +36,13 @@ class GameViewController: UIViewController {
         }
     }
     
+    func updateLabels() {
+        targetLabel.text = NSString(format: "%ld", level.targetScore)
+        movesLabel.text = NSString(format: "%ld", movesLeft)
+        scoreLabel.text = NSString(format: "%ld", score)
+
+    }
+    
     func beginNextTurn() {
         level.detectPossibleSwaps()
         view.userInteractionEnabled = true
@@ -40,6 +56,10 @@ class GameViewController: UIViewController {
         }
         scene.animateMatchedCookies(chains) {
             let columns = self.level.fillHoles()
+            for chain in chains {
+                self.score += chain.score
+            }
+            self.updateLabels()
             self.scene.animateFallingCookies(columns) {
                 let columns = self.level.topUpCookies()
                 self.scene.animateNewCookies(columns) {
@@ -72,7 +92,7 @@ class GameViewController: UIViewController {
         scene = GameScene(size: skView.bounds.size)
         scene.scaleMode = .AspectFill
         
-        level = Level(filename: "Level_1")
+        level = Level(filename: "Level_0")
         scene.level = level
         scene.addTiles()
         
