@@ -33,6 +33,7 @@ class GameScene: SKScene {
         addChild(background)
         
         addChild(gameLayer)
+        gameLayer.hidden = true
         let layerPosition = CGPoint(
             x: -TileWidth * CGFloat(NumColumns) / 2,
             y: -TileHeight * CGFloat(NumRows) / 2)
@@ -218,6 +219,10 @@ class GameScene: SKScene {
         runAction(SKAction.waitForDuration(0.3), completion: completion)
     }
     
+    func removeAllCookieSprites() {
+        cookiesLayer.removeAllChildren()
+    }
+    
     func animateFallingCookies(columns: [[Cookie]], completion: () -> ()) {
         // 1
         var longestDuration: NSTimeInterval = 0
@@ -279,6 +284,20 @@ class GameScene: SKScene {
         }
         // 7
         runAction(SKAction.waitForDuration(longestDuration), completion: completion)
+    }
+    
+    func animateGameOver(completion: () -> ()) {
+        let action = SKAction.moveBy(CGVector(dx: 0, dy: -size.height), duration: 0.3)
+        action.timingMode = .EaseIn
+        gameLayer.runAction(action, completion: completion)
+    }
+    
+    func animateBeginGame(completion: () -> ()) {
+        gameLayer.hidden = false
+        gameLayer.position = CGPoint(x: 0, y: size.height)
+        let action = SKAction.moveBy(CGVector(dx: 0, dy: -size.height), duration: 0.3)
+        action.timingMode = .EaseOut
+        gameLayer.runAction(action, completion: completion)
     }
     
     func addSpritesForCookies(cookies: Set<Cookie>) {
