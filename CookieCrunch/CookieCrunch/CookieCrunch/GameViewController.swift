@@ -10,11 +10,15 @@ class GameViewController: UIViewController {
     @IBOutlet weak var targetLabel: UILabel!
     @IBOutlet weak var movesLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var gameOverPanel: UIImageView!
+    
+    var tapGestureRecognizer: UITapGestureRecognizer!
     
     func beginGame() {
         movesLeft = level.maximumMoves
         score = 0
         updateLabels()
+        level.resetComboMultiplier()
         shuffle()
     }
     
@@ -44,8 +48,10 @@ class GameViewController: UIViewController {
     }
     
     func beginNextTurn() {
+        level.resetComboMultiplier()
         level.detectPossibleSwaps()
         view.userInteractionEnabled = true
+        decrementMoves()
     }
     
     func handleMatches() {
@@ -69,6 +75,36 @@ class GameViewController: UIViewController {
         }
     }
     
+    func decrementMoves() {
+        --movesLeft
+        updateLabels()
+        if score >= level.targetScore {
+            gameOverPanel.image = UIImage(named: "LevelComplete")
+            showGameOver()
+        } else if movesLeft == 0 {
+            gameOverPanel.image = UIImage(named: "GameOver")
+            showGameOver()
+        }
+    }
+    
+    func showGameOver() {
+        gameOverPanel.hidden = false
+        scene.userInteractionEnabled = false
+        
+        tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "hideGameOver")
+        view.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    func hideGameOver() {
+        view.removeGestureRecognizer(tapGestureRecognizer)
+        tapGestureRecognizer = nil
+        
+        gameOverPanel.hidden = true
+        scene.userInteractionEnabled = true
+        
+        beginGame()
+    }
+    
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
@@ -87,6 +123,7 @@ class GameViewController: UIViewController {
         // Configure the view.
         let skView = view as SKView
         skView.multipleTouchEnabled = false
+        gameOverPanel.hidden = true
         
         // Create and configure the scene.
         scene = GameScene(size: skView.bounds.size)
