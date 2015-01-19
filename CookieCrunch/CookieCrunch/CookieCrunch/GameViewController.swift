@@ -1,5 +1,6 @@
 import UIKit
 import SpriteKit
+import AVFoundation
 
 class GameViewController: UIViewController {
     var scene: GameScene!
@@ -19,6 +20,12 @@ class GameViewController: UIViewController {
     }
     
     var tapGestureRecognizer: UITapGestureRecognizer!
+    lazy var backgroundMusic: AVAudioPlayer = {
+        let url = NSBundle.mainBundle().URLForResource("Mining by Moonlight", withExtension: "mp3")
+        let player = AVAudioPlayer(contentsOfURL: url, error: nil)
+        player.numberOfLoops = -1
+        return player
+    }()
     
     func beginGame() {
         movesLeft = level.maximumMoves
@@ -149,6 +156,7 @@ class GameViewController: UIViewController {
         scene.swipeHandler = handleSwipe
         // Present the scene.
         skView.presentScene(scene)
+        backgroundMusic.play()
         beginGame()
     }
 }
