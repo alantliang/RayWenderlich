@@ -15,6 +15,7 @@
 		E74200D11A6DEE850040AAFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E74200D01A6DEE850040AAFF /* Images.xcassets */; };
 		E74200D41A6DEE850040AAFF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74200D21A6DEE850040AAFF /* LaunchScreen.xib */; };
 		E74200E01A6DEE850040AAFF /* BreakoutSpriteKitTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74200DF1A6DEE850040AAFF /* BreakoutSpriteKitTutorialTests.swift */; };
+		E775CBD21A772C12004CB994 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E775CBD11A772C12004CB994 /* GameOverScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		E74200D91A6DEE850040AAFF /* BreakoutSpriteKitTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakoutSpriteKitTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74200DE1A6DEE850040AAFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E74200DF1A6DEE850040AAFF /* BreakoutSpriteKitTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakoutSpriteKitTutorialTests.swift; sourceTree = "<group>"; };
+		E775CBD11A772C12004CB994 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				E74200C51A6DEE850040AAFF /* AppDelegate.swift */,
 				E74200C71A6DEE850040AAFF /* GameScene.sks */,
 				E74200C91A6DEE850040AAFF /* GameScene.swift */,
+				E775CBD11A772C12004CB994 /* GameOverScene.sks */,
 				E74200CB1A6DEE850040AAFF /* GameViewController.swift */,
 				E74200CD1A6DEE850040AAFF /* Main.storyboard */,
 				E74200D01A6DEE850040AAFF /* Images.xcassets */,
@@ -201,6 +204,7 @@
 				E74200D41A6DEE850040AAFF /* LaunchScreen.xib in Resources */,
 				E74200D11A6DEE850040AAFF /* Images.xcassets in Resources */,
 				E74200C81A6DEE850040AAFF /* GameScene.sks in Resources */,
+				E775CBD21A772C12004CB994 /* GameOverScene.sks in Resources */,
 				E74200CF1A6DEE850040AAFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +417,7 @@
 				E74200E51A6DEE850040AAFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E74200E61A6DEE850040AAFF /* Build configuration list for PBXNativeTarget "BreakoutSpriteKitTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				E74200E81A6DEE850040AAFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
