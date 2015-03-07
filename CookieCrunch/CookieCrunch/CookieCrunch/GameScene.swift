@@ -290,7 +290,6 @@ class GameScene: SKScene {
                 ]))
             }
         }
-        // 7
         runAction(SKAction.waitForDuration(longestDuration), completion: completion)
     }
     
