@@ -14,6 +14,7 @@
 		101DD6D51A052EDE00161F0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 101DD6D31A052EDE00161F0D /* LaunchScreen.xib */; };
 		101DD6E11A052EDE00161F0D /* BlueLibrarySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101DD6E01A052EDE00161F0D /* BlueLibrarySwiftTests.swift */; };
 		101DD6EC1A052F0E00161F0D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101DD6EB1A052F0E00161F0D /* HTTPClient.swift */; };
+		E72E38671AC7771100AB5826 /* HorizontalScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72E38661AC7771100AB5826 /* HorizontalScroller.swift */; };
 		E74823901AB3C7E10017A8AF /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E748238F1AB3C7E10017A8AF /* AlbumView.swift */; };
 		E74823951AB3CEC20017A8AF /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74823941AB3CEC20017A8AF /* LibraryAPI.swift */; };
 		E74823971AB3CFC30017A8AF /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74823961AB3CFC30017A8AF /* PersistencyManager.swift */; };
@@ -43,6 +44,7 @@
 		101DD6DF1A052EDE00161F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		101DD6E01A052EDE00161F0D /* BlueLibrarySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueLibrarySwiftTests.swift; sourceTree = "<group>"; };
 		101DD6EB1A052F0E00161F0D /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		E72E38661AC7771100AB5826 /* HorizontalScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScroller.swift; sourceTree = "<group>"; };
 		E748238F1AB3C7E10017A8AF /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		E74823941AB3CEC20017A8AF /* LibraryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
 		E74823961AB3CFC30017A8AF /* PersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				101DD6CC1A052EDE00161F0D /* ViewController.swift */,
+				E72E38661AC7771100AB5826 /* HorizontalScroller.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				E74823991AB4E1280017A8AF /* AlbumExtensions.swift in Sources */,
 				101DD6CB1A052EDE00161F0D /* AppDelegate.swift in Sources */,
 				E74823951AB3CEC20017A8AF /* LibraryAPI.swift in Sources */,
+				E72E38671AC7771100AB5826 /* HorizontalScroller.swift in Sources */,
 				101DD6EC1A052F0E00161F0D /* HTTPClient.swift in Sources */,
 				E74823901AB3C7E10017A8AF /* AlbumView.swift in Sources */,
 				E7BFE58A1AB3C60300EEE13B /* Album.swift in Sources */,
